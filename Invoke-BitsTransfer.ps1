@@ -8,7 +8,7 @@
 
 .DESCRIPTION
     Invoke-BitsTransfer.ps1 carves BITS file transfer details from QMGR files.
-    Finding XferHeaders, Invoke-BitsTransfer then searches for valid paths and flags on suspicious entries not in whitelist.
+    Finding XferHeaders, Invoke-BitsTransfer then searches for valid paths and outputs to stdout.
     
     QMGR files are named qmgr0.dat or qmgr1.dat and located in the folder %ALLUSERSPROFILE%\Microsoft\Network\Downloader.
     Run to carve all File transfer information - Source and Destination. Then look for unusual entries.
