@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	Invoke-BitsDetection.ps1 extracts all BITS transfer URLs from Windows BITS Event log
+	Invoke-BitsDetection.ps1 detects on anomalous BITS transfer URLs from Windows BITS Event log. 
 
     Name: Invoke-BitsDetection.ps1
     Version: 0.1
@@ -9,11 +9,11 @@
 .DESCRIPTION
     Invoke-BitsDetection.ps1 extracts all BITS transfer URLs from Windows Event log.
     Microsoft-Windows-Bits-Client/Operational Event ID 59.
-
-    The goal of this script is to detect anomolous sources for BITs transfers that can lead to additional investigation.
+    
+    Utilising a WHitelist of expected BITs domains, the goal of this script is to detect anomolous sources for BITs transfers that can lead to additional investigation.
     Use -All switch to list all URL sources and do not run Whitleist check.
 
-    Please add new domains to whitelist
+    Please add new domains to whitelist.
 
 .PARAMETER BackDays
     Optional parameter for specifying number of days to search back in Microsoft-Windows-Bits-Client/Operational Eventlog. Default is 14.

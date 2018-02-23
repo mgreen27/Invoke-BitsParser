@@ -31,7 +31,7 @@
 
 .NOTES
     Initial Python parser used as inspiration by ANSSI here - https://github.com/ANSSI-FR/bits_parser
-    Invoke-BitsParser currently does not carve.
+    Invoke-BitsParser currently does not carve incomplete Jobs.
 
     FileHeader (32): 13-F7-2B-C8-40-99-12-4A-9F-1A-3A-AE-BD-89-4E-EA
     QueueHeader (32): 47-44-5F-00-A9-BD-BA-44-98-51-C4-7B-B6-C0-7A-CE
